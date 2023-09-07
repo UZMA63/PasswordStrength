@@ -1,0 +1,73 @@
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box ;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+    font-size: 16px;
+    margin: 0;
+    background-color: #0276ad;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form-box{
+    width: 600px;
+    padding: 30px;
+    border-radius: 25px;
+    background-color: #020a1e;
+}
+.form-box input:not([type="submit"]){
+width: 100%;
+height: 50px;
+padding:10px;
+line-height: 30px;
+font-size: 20px;
+margin-bottom: 20px;
+}
+.input_submit{
+    width: 150px;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #0da9f3;
+    color: #fff;
+    pointer-events: none;
+}
+.input_submit.active{
+    pointer-events: auto;
+}
+
+.input_submit:hover{
+    background-color: #0276ad;
+}
+.password_required{
+    display: none;
+}
+.password_required ul{
+    padding: 0;
+    margin: 0 0 15px;
+    list-style: none;
+}
+.password_required ul li{
+    margin-bottom: 8px;
+    color: red;
+    font-weight: 700;
+    
+}
+.password_required ul li.active{
+     color:#02af02
+}
+.password_required ul li span:before{
+    content: "✖";
+    padding-right: 10px;
+}
+    .password_required ul li.active span:before{
+     content: "✅";
+     padding-right: 10px;
+    }

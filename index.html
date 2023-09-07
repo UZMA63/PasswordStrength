@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-box">
+        <form>
+            <input type="email" placeholder="Email" name="email" required>
+            <input class="password_validation"type="password" placeholder="Password"  required>
+            <div class="password_required">
+                <ul>
+                    <li class="lowercase"><span></span>One Lowercase Letter</li>
+                    <li class="capital"><span></span>One Capital Letter</li>
+                    <li class="number"><span></span>One Number</li>
+                    <li class="special_character"><span></span>One special Character</li>
+                    <li class="least"><span></span>At Least 8 Characters</li>
+
+                </ul>
+            </div>
+            <input class="input_submit active" type="submit" value="Login">
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
